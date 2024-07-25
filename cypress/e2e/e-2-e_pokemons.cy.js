@@ -2,8 +2,8 @@ describe('Проверка авторизации', function () {
 
     it('e2e покупка аватара на покемонах', function () {
         cy.visit('https://pokemonbattle.ru/'); //Зашел на сайт
-        cy.get(':nth-child(1) > .auth__input').type('xydbwi228@yandex.ru');
-        cy.get('#password').type('D-Link1488228');
+        cy.get(':nth-child(1) > .auth__input').type('YOUR-LOGIN');
+        cy.get('#password').type('YOUR-PASSWORD');
         cy.get('.auth__button').click();
         cy.get('.header__btns > :nth-child(4)').click();
         cy.get('.available > button').first().click();
